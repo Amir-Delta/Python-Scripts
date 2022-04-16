@@ -1,11 +1,14 @@
-
+# This script converts an ASCII file (with fixed column position and lengths) obtained from CDC into a csv one 
+# The ASCII file is downloaded from https://www.cdc.gov/brfss/annual_data/2020/files/LLCP2020ASC.zip
+# The variable layout of the ASCII file (column positions and lenths) was obtained from https://www.cdc.gov/brfss/annual_data/2020/llcp_varlayout_20_onecolumn.html and saved as a csv file. This file is availeble in "../Miscellaneous"
+ 
 # Importing packages
 import pandas as pd
 import numpy as np
 
 # Opening the ASCII file and the associated variable layout
-file=open('../Datasets/LLCP2020.ASC','r') # Note that the ASCII file was downloaded from https://www.cdc.gov/brfss/annual_data/2020/files/LLCP2020ASC.zip
-Variable_Layout=pd.read_csv('../Miscellaneous/LLCP2020_Variable_Layout.csv') # The variable layout was obtained from https://www.cdc.gov/brfss/annual_data/2020/llcp_varlayout_20_onecolumn.html and saved in an exce
+file=open('../Datasets/LLCP2020.ASC','r') 
+Variable_Layout=pd.read_csv('../Miscellaneous/LLCP2020_Variable_Layout.csv')
 
 # Reading the ASCII file lines, getting the number of rows (lines), and number of columns and column names from variable layout
 lines=file.readlines()
