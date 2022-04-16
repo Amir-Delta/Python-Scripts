@@ -4,8 +4,8 @@ import pandas as pd
 import numpy as np
 
 # Opening the ASCII file and the associated variable layout
-file=open('../Datasets/LLCP2020.ASC','r')
-Variable_Layout=pd.read_csv('../Datasets/LLCP2020_Variable_Layout.csv')
+file=open('../Datasets/LLCP2020.ASC','r') # Note that the ASCII file was downloaded from https://www.cdc.gov/brfss/annual_data/2020/files/LLCP2020ASC.zip
+Variable_Layout=pd.read_csv('../Miscellaneous/LLCP2020_Variable_Layout.csv') # The variable layout was obtained from https://www.cdc.gov/brfss/annual_data/2020/llcp_varlayout_20_onecolumn.html and saved in an exce
 
 # Reading the ASCII file lines, getting the number of rows (lines), and number of columns and column names from variable layout
 lines=file.readlines()
