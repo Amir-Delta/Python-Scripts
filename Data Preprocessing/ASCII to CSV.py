@@ -23,3 +23,5 @@ for index, row in df.iterrows():
         length=Variable_Layout.iloc[j,2]
         row[j]=lines[index][start-1:start-1+length]
 
+# Saving the dataframe as a csv file
+df.to_csv("LLCP2020.csv",header=True,index=False)
