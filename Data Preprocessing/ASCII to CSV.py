@@ -4,8 +4,8 @@ import pandas as pd
 import numpy as np
 
 # Opening the ASCII file and the associated variable layout
-file=open(r'C:\Users\Amir\OneDrive\DataScience\Python\Python Git Scripts\Datasets\LLCP2020.ASC','r')
-Variable_Layout=pd.read_csv(r'C:\Users\Amir\OneDrive\DataScience\Python\Python Git Scripts\Datasets\LLCP2020_Variable_Layout.csv')
+file=open('../Datasets/LLCP2020.ASC','r')
+Variable_Layout=pd.read_csv('../Datasets/LLCP2020_Variable_Layout.csv')
 
 # Reading the ASCII file lines, getting the number of rows (lines), and number of columns and column names from variable layout
 lines=file.readlines()
