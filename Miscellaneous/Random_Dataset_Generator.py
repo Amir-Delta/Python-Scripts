@@ -55,15 +55,15 @@ for i in range(100):
     value=random.choice(Relationship_Categories)
     relationship_values.append(value)
 
-# Defining a dictionary with keys as column names and values as column values.
-# Note that the column names are not tidy; this is pursposeful and they will be fixed in data preprocessing. 
+# Defining a dictionary with keys as column names and values as column values
+# Note that the column names are not tidy; this is pursposeful and they will be fixed in data preprocessing
 data = {'_Outcome': outcome_values,
         'Age*':age_values,
-        'Annual Income (Dollars)': income_values,
+        '2020 Annual Income (Dollars)': income_values,
         '   Education':education_values,
         'HOME   OWNERSHIP?  _':home_ownership_values,
-        '0Relationship Status':relationship_values}
+        'Relationship/Status   + ':relationship_values}
 
-# Converting the dictionary into a dataframe and saving it as a csv file.
+# Converting the dictionary into a dataframe and saving it as a csv file
 df=pd.DataFrame.from_dict(data)
 df.to_csv('RandomDataset.csv', index=False)

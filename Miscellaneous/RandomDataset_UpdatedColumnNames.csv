@@ -1,4 +1,4 @@
-_Outcome,Age*,2020 Annual Income (Dollars),   Education,HOME   OWNERSHIP?  _,Relationship/Status   + 
+outcome,age,c_2020_annual_income_dollars,education,home_ownership,relationship_status
 1.0,43,116960.0,1.0,Tenant,Single
 1.0,18,156460.0,3.0,Tenant,Partnered
 1.0,78,285893.0,2.0,Shelterless,Single
