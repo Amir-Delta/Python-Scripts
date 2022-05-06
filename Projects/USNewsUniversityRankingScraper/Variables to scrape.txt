@@ -1,0 +1,42 @@
+Median starting salary of alumni
+
+
+----Admissions
+application deadline
+application fee
+acceptance rate
+
+
+----Academics
+Student-faculty ratio
+Full-time faculty gender distribution
+Part-time faculty gender distribution
+Class sizes
+
+
+----Student Life
+total enrollment
+Total undergraduate enrollment
+Total graduate enrollment
+Awarded Pell Grants 
+Degree-seeking student gender distribution
+
+Enrolled students who are veterans or active service members
+Criminal Offenses 
+Arrests 
+
+
+----Tuition & Expenses
+Tuition and fees
+Net price for federal loan recipients 
+Net price by family income 
+Room and board
+Typical total federal loan debt after graduation
+Typical total federal loan debt among those who did not graduate
+Typical monthly loan payment
+Average total indebtedness of 2020 graduating class
+Graduating students who have borrowed 
+
+
+----Campus
+Campus size
