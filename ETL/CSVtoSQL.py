@@ -1,11 +1,12 @@
-# This script creates a function that reads a csv file, reads it chunk by chunk, and saves it into a table in a MySQL Database
+# This script creates a function that reads a csv file, reads it chunk by chunk, and saves it into a table in a SQL Database
 
 # Importing the packages
 import pandas as pd
 from sqlalchemy import create_engine
 
 # Defining the function
-def CSVtoSQL(csv_path, chunksize, rdbms, user, password, server, port, database, table):
+# Note that in the function arguments, chunksize refers to the number of rows in the csv file that is read and ingested into the SQL database at each time, rbms refers to the relational database management system (e.g. mysql)
+def CSVtoSQL(csv_path, chunksize, rdbms, user, password, server, port, database, table): 
     engine = create_engine(f'{rdbms}://{user}:{password}@{server}:{port}/') # creating the sqlalchemy engine
     with engine.connect() as conn:
         conn.execute("commit")
